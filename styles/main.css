@@ -1,0 +1,57 @@
+div.main{
+    grid-area: main;
+    background: url("../img/me/meMainPC2.jpg") rgba(0, 0, 0, 0.863);
+    min-height: 100vh; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    box-shadow: 0px 0px 10px rgb(133, 128, 128);
+}
+
+
+div.main div{
+    margin: 40vh 30vw ;
+    text-align: center;
+}
+
+.downloadButton{
+    box-sizing: border-box;
+    touch-action: manipulation; 
+    cursor: pointer;
+    color: #ffffff;
+	height: 40px;
+    padding: 10px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.downloadButton:link {
+	text-decoration:none
+}
+	
+.downloadButton:visited {
+	text-decoration:none; 
+}
+	
+.downloadButton:active {
+	text-decoration:none; 
+	color:yellow
+}
+	
+.downloadButton:hover {
+	text-decoration:none; 
+	color:rgb(0, 0, 0);
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    color: #444;
+    background-color: #fff;
+	border-radius: 50px;
+}
+
+#myProf{
+    font-size: 3vw;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    font-family:TATypefire-Bold    
+}

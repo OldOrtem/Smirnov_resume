@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Smirnov resume</title>
+        <link rel="icon" type="image/gif/png" href="img/icons/icon.png.crdownload">
+
+        <link rel="stylesheet" href="styles/global.css" type="text/css">
+        <link rel="stylesheet" href="styles/nav.css" type="text/css">
+        <link rel="stylesheet" href="styles/main.css" type="text/css">
+        <link rel="stylesheet" href="styles/vizitcard.css" type="text/css">
+        <link rel="stylesheet" href="styles/description.css" type="text/css">
+        <link rel="stylesheet" href="styles/adaptation.css" type="text/css">
+        <link rel="stylesheet" href="styles/foot.css" type="text/css">
+        <link rel="stylesheet" href="styles/form.css" type="text/css">
+
+        <script src='scripts/script.js'></script>
+
+    </head>
+
+    <body>
+        <div class="wrapper">
+
+            <div class="burger" ><a  onclick="toggle('navbar')"><img src="img/icons/burger.png" alt="burg"></a></div>
+
+            <div id="navbar"class="nav show">
+                <div>
+                    <div><a href="" style="font-weight: bolder">Главная</a></div>
+                    <div><a href="#vizitka">О себе</a></div>
+                    <div><a href="#education">Образование</a></div>
+                    <div><a href="#experience">Опыт</a></div>
+                    <div><a href="#skills">Навыки</a></div>
+                    <div class="dropdown" onmouseover="show('dropdown')" onmouseout="hide('dropdown')"><a class="dropdown" >Проекты</a></div>
+                </div>
+            </div>
+
+            <div class="dropdown-content" id="dropdown" onmouseover="show('dropdown')" onmouseout="hide('dropdown')">
+                <a href="#projects" onclick="setProject(0)">Платформер</a>
+                <a href="#projects" onclick="setProject(1)">Сетевой тенниc</a>
+            </div>
+                
+
+            <div class="main">
+                <div >
+                    <p id="myProf">Junior developer</p>
+                    <br>
+                    <br>
+                    <a class="downloadButton" href="docs/resume.pdf" download>
+                        Скачать резюме</button>
+                    </a>
+                </div>
+                
+            </div>
+
+            <div class="vizitka" id="vizitka">
+                <div>
+                    <br><br>
+                    <img id="me" src="img/me/me2.jpg" alt="me">
+                    <br><br>
+                    <p><b>Смирнов Артём Александрович</b></p>
+                    <p id="age"></p>
+                    <p>Санкт-Петербург</p>
+                    <p>artemsmirnof@mail.ru</p>
+                    <p>@pil_grim_age</p>
+                    <br>
+                    <!-- <a class="vizitka" href="#vizitka" onclick="show('form')">Написать</a>
+                    <br><br> -->
+                </div>
+
+                <!-- <div id="form">
+                    
+                    <p>Введите имя вашего почтового ящика и сообщение:</p>
+                    <form action="javascript:formAction()">
+                            <Label>Email:</Label><br>
+                            <input type="email" name="email" id="emailfield"><br>
+                            <Label>Сообщение:</Label><br>
+                            <input type="text" name="mess" id="textfield"><br><br>
+                            <input type="submit" value="Отправить"  id="submit">
+                    </form>
+                    <br>
+                </div> -->
+
+            </div>
+
+            
+            <script src='scripts/age.js'></script>
+
+            <div class="discription" >
+                
+                <div class="content" id="education">
+                    <br>
+                    <h3>Образование</h3>
+                    <br>
+
+                    <div class="education">
+                        <div>
+                            <img class='skills' src="img/icons/mortarboard.png" alt="me">
+                        </div>
+                        <br>
+                        <div>
+                            <b>Санкт-Петербургский государственный университет
+                            аэрокосмического приборостроения</b> <br>
+                            2019 — 2023<br>
+                            Факультет: Институт информационных систем и защиты
+                            информации<br>
+                            Направление: Инфокоммуникационные технологии и
+                            системы связи <br>
+                        </div>
+                            <br>
+                        <div>
+                            <b>Московский институт электроники и математики  НИУ ВШЭ</b><br>
+                            2022<br>
+                            Программа повышения квалификации "DevSecOps и технологии контейниризации"
+                        </div>
+                        <br>
+                        <div>
+                            <b>Университет Иннополис</b><br>
+                            2022-2023<br>
+                            Программа повышения квалификации "Основы frontend-разработки"
+                        </div>
+                    </div>
+                    <br><br>
+                </div>
+
+                <div class="content" id="experience">
+                    <br>
+                    <h3>Опыт работы</h3>
+                    <br>
+
+                    <div class="work">
+                        <div>
+                            <img class='skills' src="img/icons/suitcase1.png" alt="me">
+                        </div>
+                    </div>
+                    <br>
+                    <div>
+                        <b>Топливно-энергетический комплекс Санкт-Петербурга</b><br>
+                        Системный администратор<br>
+                        Июнь - июль 2022 <br>
+                        В рамках производственной практики на придприятии ТЭК
+                        СПб занимался изучением и настройкой ПО и устройств для
+                        осуществеления импортозамещения (AstraLinux, Termidesk,
+                        S-Terra).
+                    </div>
+                    <br><br>
+                </div>
+
+                <div class="content" id="skills">
+                    <br>
+                    <h3>Навыки</h3>
+                    <br>
+
+                    <div class="skills">
+                        <div>
+                            <img class='skills' src="img/icons/skills/html.png" alt="me">
+                        </div>     
+                        <div>
+                            <img class='skills' src="img/icons/skills/css.png" alt="me">
+                        </div>  
+                        <div>
+                            <img class='skills' src="img/icons/skills/js-file.png" alt="me">
+                        </div>  
+                        <div>
+                            <img class='skills' src="img/icons/skills/c++.png" alt="me">
+                        </div>   
+                        <div>
+                            <img class='skills' src="img/icons/skills/python.png" alt="me">
+                        </div>  
+                        <div>
+                            <img class='skills' src="img/icons/skills/java.png" alt="me">
+                        </div>  
+                    </div>
+                    <br><br>
+                </div>
+
+                <div class="content" id="projects">
+                    <br>
+                    <h3>Проекты</h3>
+                    <br>
+
+                    <div class="projects">                  
+                        <div><img src="img/projects/left.png" class="button" alt="prev" onClick="leftbut()"></div>
+                        <div class="cdiv" id="imgdiv">
+                            <img class="projects" src="img/projects/00.jpg" id="photoM" alt="diafilm">
+                        </div>
+                        <div><img src="img/projects/right.png" class="button" alt="next" onClick="rightbut()"></div>
+                        
+                    </div><br><br>
+
+                    <p>Некоторые проекты, разработанные на языке java в рамках обучения в СПбГУАП.</p>
+                    <p>В данный момент Вы находитесь на одном из сайтов, написанных во время прохождения курса по frontend-разработке.</p>
+                    <br><br>
+                </div>
+
+                <script>
+                    let photo = document.getElementById("photoM");
+                    photo.title = discription[schet];
+                </script>
+
+            </div>
+
+            <div class="foot">
+                <div>
+                    <a href="https://github.com/OldOrtem"><img class="icons" src="img/icons/git.png"></a>
+                    <a href="https://vk.com/pil_grim_age"><img class="icons" src="img/icons/vk.png"></a>
+                    <a href="https://t.me/pil_grim_age"><img class="icons"  src="img/icons/tg.png"></a>
+              </div>
+            </div>
+        </div>                                             
+    </body>
+</html>

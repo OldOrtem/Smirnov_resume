@@ -1,0 +1,23 @@
+.foot{
+    grid-area: foot;
+    width: 100vw;
+    background-color: rgb(36, 35, 35);
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 5px rgb(119, 116, 116);
+    margin-top: 40px;
+}
+
+.foot div{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.foot a {
+    float:left;
+    font-size: 16px;
+    color: rgb(243, 240, 240);
+    padding: 16px 16px;
+    border-radius: 50px;
+}

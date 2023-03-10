@@ -1,0 +1,93 @@
+.discription{
+    background-color: rgb(36, 35, 35);
+    border: solid black;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    grid-area: dis;
+    border-radius: 0%;
+    padding: 0px 0px;
+    margin: 20px auto 20px 10px;
+    font-size: 18px;
+    line-height: 30px;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    z-index: 0;
+}
+
+img.skills{
+    width: 100px;
+}
+
+.content{
+    left: 10px;
+    width: 650px;
+    padding: 50px;
+    text-align: center;
+}
+
+div.skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1vw;
+}
+
+
+.content:nth-child(odd) {
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+.content:nth-child(even) {
+    background-color: rgb(36, 35, 35);
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+#education{
+    background: url("../img/background/guap.jpg") rgba(0, 0, 0, 0.842) 50% ;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+b{
+    font-weight: bolder;
+}
+
+#skills{
+    background: url("../img/background/mainPC.jpg") rgba(0, 0, 0, 0.863) 50% ;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+img.skills:hover{
+    transform: translateY(-5px);
+}
+
+div.skills{
+    width: inherit;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+}
+
+.button {       
+    width: 40px;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+img.projects{
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 5px;
+    border: solid black;
+}
+
+div.projects{
+    display: grid;
+    grid-template-columns: 60px 1fr 60px;
+}
+
+div.projects div{
+    margin: auto 0;
+}

@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    width: 100vw;
+    color: aliceblue;
+    font-family: "FiraSans-Regular";
+}
+
+.wrapper{
+    width: 100vw;
+    display: grid;
+    grid-template-areas:
+    "main main "
+    "viz dis"
+    "foot foot";
+    grid-template-columns: 35% 1fr;
+    grid-template-rows: 100vh 1fr;
+    background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(61, 61, 61));
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.icons{
+    width: 30px;
+}
+
+@font-face {
+    font-family: "TATypefire-Bold"; 
+    src: url("../fonts/TATypefire-Bold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+@font-face {
+    font-family: "FiraSans-Regular"; 
+    src: url("../fonts/FiraSans-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+    
+a {
+    font-family: "FiraSans-Regular";
+}
